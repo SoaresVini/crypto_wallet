@@ -1,9 +1,14 @@
 <h1>Seja Vem-Vindo!!</h1>
+<p>O idioma usado nessa aplicação é <strong><%= locale(I18n.locale) %></strong></p>
+<p>Data: <%= I18n.l(Date.today) %></p>
 
-<p>Data: <%= data_br(Date.today) %></p>
+<p> <%=I18n.t('hello')%> </p>
 
-<ul>
-    <li>
-        <%= link_to "Cadastro de Moedas", coins_path %>
-    </li>
-</ul>
+<%= render "menu"%>
+
+<p>
+    <strong><%= @nome %></strong>, você esta em ambiente de <strong><%= ambiente_rails %></strong>
+</p>
+<p>
+    Meu curso é o <strong><%= @curso %></strong>
+</p>

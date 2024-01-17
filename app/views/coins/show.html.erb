@@ -3,8 +3,8 @@
 <%= render @coin %>
 
 <div>
-  <%= link_to "Editar moedas", edit_coin_path(@coin) %> |
-  <%= link_to "Voltar a lista de moedas", coins_path %>
+  <%= link_to I18n.t('links.edit'), edit_coin_path(@coin) %> |
+  <%= link_to I18n.t('links.list'), coins_path %>
 
-  <%= button_to "Deletar moedas", @coin, method: :delete %>
+  <%= button_to I18n.t("links.delete"), @coin, method: :delete %>
 </div>

@@ -1,14 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Coins</h1>
+<%= link_to I18n.t("links.new"), new_coin_path %>
 
 <div id="coins">
   <% @coins.each do |coin| %>
     <%= render coin %>
-    <p>
-      <%= link_to "Vizualizar Moeda", coin %>
+    <p class="view_coin">
+      <%= link_to I18n.t('links.show'), coin %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "Nova Moeda", new_coin_path %>
+

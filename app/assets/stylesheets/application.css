@@ -13,7 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
- .teste {
-    color: aqua;
- }

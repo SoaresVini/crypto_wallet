@@ -1,0 +1,31 @@
+pt-BR:
+  hello: 'Olá mundo'
+  date: 
+    formats: 
+      default: "%d/%m/%Y"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Deletar"
+    list: "Voltar a Lista"
+    new: "Novo"
+  activerecord:
+    models:
+      coin: 
+        one: "Moedas"
+        other: 'Moedas'
+      mining_type: "Tipos de mineração"
+    attributes:
+        coin:
+          description: 'Descrição'
+          acronym: 'Sigla'
+          url_image: 'Imagem'
+          mining_type: 'Tipo de mineração'
+          update_at: 'Atualizado em'
+          created_at: 'Criado em'
+        mining_type:
+          description: 'Descrição'
+          acronym: 'Sigla'
+          url_image: 'Imagem'
+          update_at: 'Atualizado em'
+          created_at: 'Criado em' 
